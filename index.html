@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./swiper.min.css">
+    <script src="./swiper.min.js"></script>
 </head>
 
 <body>
@@ -15,9 +17,75 @@
             <span>淘</span>
             <input type="text" value="寻找宝贝店铺">
         </header>
-        <main></main>
+        <main>
+            <div class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="1.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <dl>
+                    <dt><img src="img/1.png" alt=""></dt>
+                    <dd>天猫</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/2.png" alt=""></dt>
+                    <dd>豆豆</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/4.png" alt=""></dt>
+                    <dd>王庠</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/3.png" alt=""></dt>
+                    <dd>单车</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/5.png" alt=""></dt>
+                    <dd>蓝天</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/6.png" alt=""></dt>
+                    <dd>白云</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/7.png" alt=""></dt>
+                    <dd>情侣</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/8.png" alt=""></dt>
+                    <dd>爱情</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/9.png" alt=""></dt>
+                    <dd>社会</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/10.png" alt=""></dt>
+                    <dd>金钱</dd>
+                </dl>
+            </div>
+            <div class="dan">
+                <img src="img/ding.png" alt="">
+                <p>
+                    <span>豆豆说他不喜欢王庠</span>
+                    <span>王庠说他喜欢豆豆</span>
+                </p>
+            </div>
+        </main>
         <footer></footer>
     </div>
 </body>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 1000
+        }
+    })
+</script>
 
 </html>
