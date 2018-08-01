@@ -45,6 +45,7 @@ header input {
 }
 
 main {
+    position: relative;
     width: 100%;
     background: #FFFFFF;
     overflow: hidden;
@@ -98,7 +99,40 @@ main {
 .dan img {
     width: 10%;
     height: auto;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
-.dan p {}
+.dan p {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ding {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background: #FFFDFE;
+    position: fixed;
+    bottom: 0;
+}
+
+footer dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer dl dt i {
+    font-size: 26px!important;
+}
